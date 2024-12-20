@@ -17,7 +17,7 @@ int menuPrincipal(int lin1, int col1, int qtd, char lista[][40]) {
     lin2 = lin1 + (qtd * 2 + 2);
     col2 = col1 + tamMaxitem + 4;
 
-    TextColor(WHITE, _BLUE);
+    TextColor(WHITE, _RED);
     setlocale(LC_ALL, "C");
     box(lin1, col1, lin2, col2);
     setlocale(LC_ALL, "");
@@ -26,9 +26,9 @@ int menuPrincipal(int lin1, int col1, int qtd, char lista[][40]) {
         linha = lin1 + 2;
         for (i = 0; i < qtd; i++) {
             if (i + 1 == opc)
-                TextColor(BLACK, _LIGHTGREEN);
+                TextColor(BLACK, _WHITE);
             else
-                TextColor(WHITE, _BLUE);
+                TextColor(WHITE, _RED);
 
             linhaCol(linha, col1 + 2);
             printf("%s", lista[i]);
