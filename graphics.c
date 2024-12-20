@@ -1,4 +1,4 @@
-//arquivo.c do graphics.h
+/*arquivo.c do graphics.h*/
 
 #include "graphics.h"
 
@@ -20,7 +20,7 @@ void linhaCol(int lin, int col) {
 void box(int lin1, int col1, int lin2, int col2) {
     int i, j;
 
-    // Linhas horizontais
+    /* Linhas horizontais*/
     for (i = col1; i <= col2; i++) {
         linhaCol(lin1, i);
         printf("%c", HORIZONTAL);
@@ -28,7 +28,7 @@ void box(int lin1, int col1, int lin2, int col2) {
         printf("%c", HORIZONTAL);
     }
 
-    // Linhas verticais
+    /* Linhas verticais*/
     for (i = lin1; i <= lin2; i++) {
         linhaCol(i, col1);
         printf("%c", VERTICAL);
@@ -36,7 +36,7 @@ void box(int lin1, int col1, int lin2, int col2) {
         printf("%c", VERTICAL);
     }
 
-    // Preenchimento do fundo
+    /* Preenchimento do fundo*/
     for (i = lin1 + 1; i < lin2; i++) {
         for (j = col1 + 1; j < col2; j++) {
             linhaCol(i, j);
@@ -44,7 +44,7 @@ void box(int lin1, int col1, int lin2, int col2) {
         }
     }
 
-    // Cantos
+    /* Cantos*/
     linhaCol(lin1, col1);
     printf("%c", TOP_LEFT);
     linhaCol(lin1, col2);
@@ -54,3 +54,16 @@ void box(int lin1, int col1, int lin2, int col2) {
     linhaCol(lin2, col2);
     printf("%c", BOTTOM_RIGHT);
 }
+
+void theCrypt(){
+    printf("    ¦¦¦        _¦    ¦_       _¦¦¦¦¦¦¦¦       _¦¦¦¦¦¦¦¦    _¦¦¦¦¦¦¦¦ _¦¦   _      _¦¦¦¦¦¦¦_     ¦¦¦     \n");
+    printf("¯¦¦¦¦¦¦¦¦¦_   ¦¦¦    ¦¦¦     ¦¦¦    ¦¦¦      ¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦ ¦¦¦   ¦¦_   ¦¦¦    ¦¦¦ ¯¦¦¦¦¦¦¦¦¦_ \n");
+    printf("   ¯¦¦¦¯¯¦¦   ¦¦¦    ¦¦¦     ¦¦¦    ¦¯       ¦¦¦    ¦¯    ¦¦¦    ¦¦¦ ¦¦¦___¦¦¦   ¦¦¦    ¦¦¦    ¯¦¦¦¯¯¦¦ \n");
+    printf("    ¦¦¦   ¯  _¦¦¦____¦¦¦__  _¦¦¦___          ¦¦¦         _¦¦¦____¦¦¯ ¯¯¯¯¯¯¦¦¦   ¦¦¦    ¦¦¦     ¦¦¦   ¯ \n");
+    printf("    ¦¦¦     ¯¯¦¦¦¯¯¯¯¦¦¦¯  ¯¯¦¦¦¯¯¯          ¦¦¦        ¯¯¦¦¦¯¯¯¯¯   _¦¦   ¦¦¦ ¯¦¦¦¦¦¦¦¦¦¯      ¦¦¦     \n");
+    printf("    ¦¦¦       ¦¦¦    ¦¦¦     ¦¦¦    ¦_       ¦¦¦    ¦_  ¯¦¦¦¦¦¦¦¦¦¦¦ ¦¦¦   ¦¦¦   ¦¦¦            ¦¦¦     \n");
+    printf("    ¦¦¦       ¦¦¦    ¦¦¦     ¦¦¦    ¦¦¦      ¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦ ¦¦¦   ¦¦¦   ¦¦¦            ¦¦¦     \n");
+    printf("   _¦¦¦¦¯     ¦¦¦    ¦¯      ¦¦¦¦¦¦¦¦¦¦      ¦¦¦¦¦¦¦¦¯    ¦¦¦    ¦¦¦  ¯¦¦¦¦¦¯   _¦¦¦¦¯         _¦¦¦¦¯   \n");
+    printf("                                                         ¦¦¦    ¦¦¦                                     \n");
+}
+
