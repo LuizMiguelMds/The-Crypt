@@ -10,7 +10,7 @@ int main() {
     
     while (1) {
         theCrypt(); /* Exibe o cabecalho apenas uma vez por loop */
-        opc = menuPrincipal(15, 4, 4, lista); /* Exibe o menu principal */
+        opc = menuPrincipal(15, 40, 4, lista); /* Exibe o menu principal */
 
         switch (opc) {
             case 1:
