@@ -1,5 +1,13 @@
 //cabeçarios do display/interface do jogo
 
+//define caracteres especiais para a box
+#define HORIZONTAL 205
+#define VERTICAL 186
+#define TOP_LEFT 201
+#define TOP_RIGHT 187
+#define BOTTOM_LEFT 200
+#define BOTTOM_RIGHT 188
+
 //lista das cores do texto
 enum COLORS {
     BLACK,
