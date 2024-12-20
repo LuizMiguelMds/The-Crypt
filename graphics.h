@@ -1,6 +1,8 @@
-//cabeçarios do display/interface do jogo
+/*cabeçarios do display/interface do jogo */
 
-//define caracteres especiais para a box
+/*define caracteres especiais para a box*/
+#include <conio.h>
+#include <windows.h>
 #define HORIZONTAL 205
 #define VERTICAL 186
 #define TOP_LEFT 201
@@ -8,7 +10,7 @@
 #define BOTTOM_LEFT 200
 #define BOTTOM_RIGHT 188
 
-//lista das cores do texto
+/*lista das cores do texto*/
 enum COLORS {
     BLACK,
     BLUE,
@@ -27,7 +29,7 @@ enum COLORS {
     YELLOW,
     WHITE
 };
-//lista das cores do fundo
+/*lista das cores do fundo*/
 enum BACKGROUND_COLORS {
     _BLACK = 0,
     _BLUE = 16,
@@ -46,13 +48,13 @@ enum BACKGROUND_COLORS {
     _YELLOW = 224,
     _WHITE = 240
 };
-//define as cores do texto
+/*define as cores do texto*/
 void textColor(int letras, int fundo);
-//define as cores do texto de fundo
+/*define as cores do texto de fundo*/
 void resetColor();
-//funcao para movimentacao de texto no terminal
+/*funcao para movimentacao de texto no terminal*/
 void linhaCol(int linha, int col);
-//funcao para a criacao da box grafica
+/*funcao para a criacao da box grafica*/
 void box(int lin1, int col1, int lin2, int col2);
-//Imprime o cabecalho do jogo
+/*Imprime o cabecalho do jogo*/
 void cabecalho();
