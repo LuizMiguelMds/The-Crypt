@@ -45,6 +45,6 @@ void resetColor();
 //funcao para movimentacao de texto no terminal
 void linhaCol(int linha, int col);
 //funcao para a criacao da box grafica
-void box(int lin1, int col1, int lin2, col2);
+void box(int lin1, int col1, int lin2, int col2);
 //Imprime o cabecalho do jogo
 void cabecalho();
