@@ -3,6 +3,7 @@
 /*define caracteres especiais para a box*/
 #include <conio.h>
 #include <windows.h>
+#include <locale.h>
 #define HORIZONTAL 205
 #define VERTICAL 186
 #define TOP_LEFT 201
@@ -57,4 +58,4 @@ void linhaCol(int linha, int col);
 /*funcao para a criacao da box grafica*/
 void box(int lin1, int col1, int lin2, int col2);
 /*Imprime o cabecalho do jogo*/
-void cabecalho();
+void theCrypt();
